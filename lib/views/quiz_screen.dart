@@ -346,11 +346,11 @@ class _QuizScreenState extends State<QuizScreen> {
 
     return ElevatedButton(
       style: ButtonStyle(
-        backgroundColor: WidgetStateProperty.all(cardColor),
-        fixedSize: WidgetStateProperty.all(
+        backgroundColor: MaterialStateProperty.all(cardColor),
+        fixedSize: MaterialStateProperty.all(
           Size(MediaQuery.sizeOf(context).width * 0.80, 40),
         ),
-        elevation: WidgetStateProperty.all(4),
+        elevation: MaterialStateProperty.all(4),
       ),
       onPressed: () {
         if (_questionNumber < widget.questionlenght.length) {

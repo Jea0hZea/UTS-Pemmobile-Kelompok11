@@ -78,11 +78,11 @@ class ResultsScreen extends StatelessWidget {
               ),
               ElevatedButton(
                 style: ButtonStyle(
-                  backgroundColor: WidgetStateProperty.all(cardColor),
-                  fixedSize: WidgetStateProperty.all(
+                  backgroundColor: MaterialStateProperty.all(cardColor),
+                  fixedSize: MaterialStateProperty.all(
                     Size(MediaQuery.sizeOf(context).width * 0.80, 40),
                   ),
-                  elevation: WidgetStateProperty.all(4),
+                  elevation: MaterialStateProperty.all(4),
                 ),
                 onPressed: () {
                   // Kembali ke halaman utama jika tombol kembali ditekan

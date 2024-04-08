@@ -69,7 +69,7 @@ class ResultsCard extends StatelessWidget {
                                 children: [
                                   // Pesan dan gambar jika hasil bagus
                                   Text(
-                                    "You have Earned this Trophy",
+                                    "Congratulation",
                                     style: Theme.of(context)
                                         .textTheme
                                         .bodyLarge!
@@ -91,7 +91,7 @@ class ResultsCard extends StatelessWidget {
                                 children: [
                                   // Pesan dan gambar jika hasil kurang memuaskan
                                   Text(
-                                    "I know You can do better!!",
+                                    "Awww... Nice Try Broo!!",
                                     style: Theme.of(context)
                                         .textTheme
                                         .bodyLarge!

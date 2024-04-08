@@ -41,11 +41,11 @@ void setData(QuizController quizController) {
     const OptionsModel(
         text: "I Gde Agung Sri Sidhimantra, S.Kom., M.Kom.", isCorrect: false),
     const OptionsModel(text: "Prof. Dr. Eko K. Budiardjo", isCorrect: false),
-    const OptionsModel(text: "Ir.Joko Widodod", isCorrect: false),
+    const OptionsModel(text: "Andi Iwan Nurhidayat, S.Kom., M.T.", isCorrect: false),
   ];
   QuizModel quiz1 = QuizModel(
       id: 1,
-      text: "Siapakah dosen penanggung jawab Manajemen Informatika ?",
+      text: "Siapakah nama dosen kaprodi ?",
       pathAsset: "",
       options: options1);
   quizController.quizzes.add(quiz1);
@@ -65,7 +65,7 @@ void setData(QuizController quizController) {
   QuizModel quiz2 = QuizModel(
       id: 2,
       text:
-          "Saya adalah dosen pengajar statistika pada sem 4 akt 22, Saya dikenal juga sebagai dosen bagian kemahasiswaan. Siapakah saya ?",
+          "Saya adalah dosen pengajar statistika pada semester 4 angkatan 2022. Siapakah saya ?",
       pathAsset: "",
       options: options2);
   quizController.quizzes.add(quiz2);
@@ -74,14 +74,14 @@ void setData(QuizController quizController) {
   List<OptionsModel> options3 = [
     const OptionsModel(text: "Teknik", isCorrect: false),
     const OptionsModel(text: "Kedokteran", isCorrect: false),
-    const OptionsModel(text: "Teknik Informatika", isCorrect: false),
+    const OptionsModel(text: "Ilmu Pendidikan", isCorrect: false),
+    const OptionsModel(text: "Hukum", isCorrect: false),
     const OptionsModel(text: "Vokasi", isCorrect: true),
-    const OptionsModel(text: "Olahraga", isCorrect: false),
   ];
   QuizModel quiz3 = QuizModel(
       id: 3,
       text:
-          "D4 Manajemen Informatika masuk dalam fakultas apa ?",
+          "D4 Manajemen Informatika masuk dalam sebuah prodi didalam suatu fakultas ?",
       pathAsset: "",
       options: options3);
   quizController.quizzes.add(quiz3);
@@ -97,8 +97,8 @@ void setData(QuizController quizController) {
   QuizModel quiz4 = QuizModel(
       id: 4,
       text:
-          "Gambar berikut menunjukkan tempat ikonik bagi universitas negeri Surabaya. Gedung tersebut dikenal dengan ?",
-      pathAsset: "assets/images/rektorat.jpeg",
+          "Gedung yang cukup ikonik di Unesa yang terletak di Lidah Wetan adalah ?",
+      pathAsset: "",
       options: options4);
   quizController.quizzes.add(quiz4);
 
@@ -107,54 +107,19 @@ void setData(QuizController quizController) {
     const OptionsModel(text: "Java", isCorrect: false),
     const OptionsModel(text: "Phyton", isCorrect: true),
     const OptionsModel(text: "C++", isCorrect: false),
-    const OptionsModel(text: "Kotlin", isCorrect: false),
+    const OptionsModel(text: "Ruby", isCorrect: false),
     const OptionsModel(text: "Pascal", isCorrect: false),
   ];
   QuizModel quiz5 = QuizModel(
       id: 5,
       text:
-          "Manakah bahasa yang paling simpel diantara pilihan-pilihan ini ?",
+          "Salah satu bahasa pemograman yang cukup simpel di antara beberapa pilihan tersebut adalah ?",
       pathAsset: "",
       options: options5);
   quizController.quizzes.add(quiz5);
 
   // Pertanyaan 6
   List<OptionsModel> options6 = [
-    const OptionsModel(
-        text: "Hafizhuddin Zul Fahmi, S.Kom., M.Sc.", isCorrect: false),
-    const OptionsModel(
-        text: "Dodik Arwin Dermawan, S.ST., S.T., M.T", isCorrect: true),
-    const OptionsModel(
-        text: "I Gde Agung Sri Sidhimantra, S.Kom., M.Kom.", isCorrect: false),
-    const OptionsModel(text: "Prof. Dr. Eko K. Budiardjo", isCorrect: false),
-    const OptionsModel(
-        text: "Andi Iwan Nurhidayat, S.Kom., M.T.", isCorrect: false),
-  ];
-  QuizModel quiz6 = QuizModel(
-      id: 6,
-      text:
-          "Manakah dosen pengampu mata kuliah UI/UX ?",
-      pathAsset: "",
-      options: options6);
-  quizController.quizzes.add(quiz6);
-
-  // Pertanyaan 7
-  List<OptionsModel> options7 = [
-    const OptionsModel(text: "2018", isCorrect: false),
-    const OptionsModel(text: "2019", isCorrect: true),
-    const OptionsModel(text: "2020", isCorrect: false),
-    const OptionsModel(text: "2021", isCorrect: false),
-    const OptionsModel(text: "2022", isCorrect: false),
-  ];
-  QuizModel quiz7 = QuizModel(
-      id: 7,
-      text: "Tahun berapakah Manajemen Informatika pindah dari D3 menjadi D4 ?",
-      pathAsset: "",
-      options: options7);
-  quizController.quizzes.add(quiz7);
-
-  // Pertanyaan 8
-  List<OptionsModel> options8 = [
     const OptionsModel(
         text: "Hafizhuddin Zul Fahmi, S.Kom., M.Sc.", isCorrect: false),
     const OptionsModel(
@@ -165,38 +130,73 @@ void setData(QuizController quizController) {
     const OptionsModel(
         text: "Andi Iwan Nurhidayat, S.Kom., M.T.", isCorrect: true),
   ];
+  QuizModel quiz6 = QuizModel(
+      id: 6,
+      text:
+          "Siapakah dosen yang mengajar 3 mata kuliah di semester 4 untuk angkatan 2022 kelas B ?",
+      pathAsset: "",
+      options: options6);
+  quizController.quizzes.add(quiz6);
+
+  // Pertanyaan 7
+  List<OptionsModel> options7 = [
+    const OptionsModel(text: "2019", isCorrect: true),
+    const OptionsModel(text: "2020", isCorrect: false),
+    const OptionsModel(text: "2017", isCorrect: false),
+    const OptionsModel(text: "2021", isCorrect: false),
+    const OptionsModel(text: "2018", isCorrect: false),
+  ];
+  QuizModel quiz7 = QuizModel(
+      id: 7,
+      text: "Kapan Manajemen Informatika pindah dari D3 menjadi D4 ?",
+      pathAsset: "",
+      options: options7);
+  quizController.quizzes.add(quiz7);
+
+  // Pertanyaan 8
+  List<OptionsModel> options8 = [
+    const OptionsModel(
+        text: "Kepala rektor", isCorrect: false),
+    const OptionsModel(
+        text: "Asisten Dosen", isCorrect: false),
+    const OptionsModel(
+        text: "Dosen kaprodi", isCorrect: false),
+    const OptionsModel(text: "Dosen mata kuliah masing-masing", isCorrect: false),
+    const OptionsModel(
+        text: "Dosen wali", isCorrect: true),
+  ];
   QuizModel quiz8 = QuizModel(
-      id: 8, text: "Saya adalah dosen yang mengajar 3 matakuliah di semester ini untuk angkatan 2022, siapakah saya ?", 
+      id: 8, text: "Siapakah dosen yang perlu dihubungi untuk aprove KRS ?",
       pathAsset: "",
       options: options8);
   quizController.quizzes.add(quiz8);
 
   // Pertanyaan 9
   List<OptionsModel> options9 = [
-    const OptionsModel(text: "Hitam", isCorrect: false),
-    const OptionsModel(text: "Merah", isCorrect: false),
-    const OptionsModel(text: "Kuning", isCorrect: false),
-    const OptionsModel(text: "Orange", isCorrect: true),
-    const OptionsModel(text: "Hijau", isCorrect: false),
+    const OptionsModel(text: "11", isCorrect: false),
+    const OptionsModel(text: "9", isCorrect: false),
+    const OptionsModel(text: "12", isCorrect: true),
+    const OptionsModel(text: "8", isCorrect: false),
+    const OptionsModel(text: "10", isCorrect: false),
   ];
   QuizModel quiz9 = QuizModel(
       id: 9,
-      text: "Apa warna iconik dari prodi Manajemen Informatika ?",
+      text: "Ada berapa mata kuliah di semester 4 untuk angkatan 2022 ?",
       pathAsset: "",
       options: options9);
   quizController.quizzes.add(quiz9);
 
   // Pertanyaan 10
   List<OptionsModel> options10 = [
-    const OptionsModel(text: "Basis Data", isCorrect: false),
-    const OptionsModel(text: "Pemograman Web", isCorrect: false),
+    const OptionsModel(text: "Algoritma Pemrograman", isCorrect: false),
+    const OptionsModel(text: "Matematika diskrit", isCorrect: false),
     const OptionsModel(text: "UI/UX", isCorrect: true),
     const OptionsModel(text: "Jaringan Komputer", isCorrect: false),
     const OptionsModel(text: "Literasi Digital", isCorrect: false),
   ];
   QuizModel quiz10 = QuizModel(
       id: 10,
-      text: "Berikut ini yang merupakan mata kuliah D4 Manajemen Informatika di semester 4 untuk angkatan 2022 adalah ?",
+      text: "Berikut Yang merupakan mata kuliah di semester 4 untuk angkatan 2022 adalah ?",
       pathAsset: "",
       options: options10);
   quizController.quizzes.add(quiz10);

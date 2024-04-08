@@ -2,6 +2,7 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:quizz/controller/naviagation_questions_model.dart';
+//import 'package:quizz/credit/pages/main_page.dart';
 import 'package:quizz/views/quiz_screen.dart';
 
 // Kelas HomePage
@@ -29,8 +30,8 @@ class _HomePageState extends State<HomePage> {
     ).keys.toList();
 
     // Warna latar belakang
-    const Color bgColor = Color.fromARGB(255, 86, 228, 9);
-    const Color bgColor3 = Color.fromARGB(255, 6, 147, 22);
+    const Color bgColor = Color(0xFF181818);
+    const Color bgColor3 = Color(0xFF0089C0);
 
     return Scaffold(
       backgroundColor: bgColor3, // Set latar belakang
@@ -57,7 +58,7 @@ class _HomePageState extends State<HomePage> {
                           )
                         ],
                       ),
-                      child: Image.asset("assets/dash.png"),
+                      child: Image.asset("assets/robot.png"),
                     ),
                     const SizedBox(
                       height: 10,
@@ -68,7 +69,7 @@ class _HomePageState extends State<HomePage> {
                         text: TextSpan(
                           children: [
                             TextSpan(
-                              text: "Flutter ",
+                              text: "Random ",
                               style: Theme.of(context)
                                   .textTheme
                                   .headlineSmall!
@@ -113,7 +114,7 @@ class _HomePageState extends State<HomePage> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Text(
-                                "username : ",
+                                "Name : ",
                                 textAlign: TextAlign.center,
                                 style: Theme.of(context)
                                     .textTheme
@@ -140,12 +141,13 @@ class _HomePageState extends State<HomePage> {
                                     borderSide: BorderSide(
                                         color: Colors.white54, width: 1.0),
                                   ),
-                                  hintText: 'Masukkan Username',
+                                  hintText: 'Masukkan Nama',
                                   hintStyle:
                                       TextStyle(color: Colors.white54),
                                 ),
                                 cursorColor: Colors.white,
                               ),
+                              const SizedBox(height: 20,),
                               // Tombol untuk memulai kuis
                               ElevatedButton(
                                   onPressed: () {
@@ -158,24 +160,24 @@ class _HomePageState extends State<HomePage> {
                                       ),
                                     );
                                   },
-                                  child: const Text("Start Question"))
+                                  
+                                  child: const Text("Start Question")),
+                              // Spacer untuk memberikan sedikit ruang antara tombol
+                              const SizedBox(height: 20),
+                              // Tombol "Hubungi Kami"
+                              ElevatedButton(
+                                onPressed: () {
+                                  Navigator.push;
+                                },
+                                child: const Text("Hubungi Kami"),
+                              ),
                             ],
                           ),
                         ),
                       ),
-                    )
+                    ),
                   ],
                 ),
-              ),
-            ),
-            // Tombol "Hubungi Kami"
-            SizedBox(
-              width: double.infinity,
-              child: ElevatedButton(
-                onPressed: () {
-                  // Tambahkan fungsi untuk menangani aksi ketika tombol "Hubungi Kami" ditekan
-                },
-                child: const Text("Hubungi Kami"),
               ),
             ),
           ],
